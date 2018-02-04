@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>formulario</title>
+  <link rel="stylesheet" type="text/css" href="css/css.css">
+</head>
+<body>
+ <div class="logeo" >Login</div>
+ <div class="suscrip" >Signup</div> 
+<div class="conten">
+<form >
+  <h1>Formulario de registro</h1>
+  <h3>Los campos con el simbolo * son obligatorios.</h3>
+  <label>Nombre*<br><input type="text" id="nombre" name="nombre" required></label>
+  <br>
+  <label>Contraseña *<br><input type="password" class="contrasena" required></label>
+  <br>
+  <label>Confirma contraseña*<br><input class="confirma" type="password" name="confirma" required></label>
+  <br>
+  <label>E-mail*<br><input type="text" class="email"  required></label>
+  <br><br>
+  <label>Hombre:<input type="radio" name="sexo" checked></label>
+  <label>Mujer:<input type="radio" name="sexo" ></label>
+  <br><br>
+  <label>Fecha de nacimiento<br><input type="date" name="fecha"></label>
+    <br><br>
+  <label>Direccion<br><input type="text" name="dire" class='dir'></label>
+    <br><br>
+    <label>Pais: </label><select name="Pais" class='pais'>
+          <option value="">Elige</option>
+          <option value="España">España</option>
+          <option value="Francia">Francia</option>
+          <option value="Alemania">Alemania</option>
+          <option value="Holanda">Holanda</option>
+        </select>
+        <br><br>
+        <div class="tar" style="display: none">Nºtarjeta:<input type="text" name="tar"></div>
+        <br>
+         <label><input class="checkbox " type="checkbox">Notificacion novedades</label>
+         <br>
+        <label><input class="checkbox " type="checkbox"> Recepcion de revista Digital</label>
+        <br><br>
+        <button name="registro" onclick="setCookie(nombre.value,confirma.value)">Registrarse</button>
+</form>  
+</div>
+<br>
+<br>
+<br>
+<div class="conten1" >
+  <form >
+    <label>Nombre<br><input type="text" name="nombre1"></label>
+    <br>
+    <label>Contraseña<br><input name="contrasena1" type="password"></label>
+    <br><br>
+    <button name="login" onclick="getCookie(nombre1.value,contrasena1.value)">Login</button>
+  </form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
+
+
